@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('f26wa55derangula:server');
+var debug = require('debug')('f26pro71derangula:server');
 var http = require('http');
 
 /**

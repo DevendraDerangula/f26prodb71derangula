@@ -1,20 +1,29 @@
 {
-  "name": "f26wa55derangula",
+  "name": "f26pro71derangula",
   "version": "0.0.0",
   "private": true,
+  "description": "Express server using Pug templates for Web Apps Lab  10",
+  "keywords": [
+    "express",
+    "pug",
+    "webapps"
+  ],
+  "license": "ISC",
+  "author": "Devendra Derangula",
+  "type": "commonjs",
+  "main": "app.js",
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
+    "debug": "^4.4.3",
     "dotenv": "^18.0.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
+    "express": "^5.3.0",
+    "http-errors": "^2.0.1",
     "mongodb": "^7.8.0",
     "mongoose": "^9.12.0",
-    "morgan": "~1.9.1",
-    "package-name": "^0.1.0",
-    "pug": "2.0.0-beta11"
+    "morgan": "^1.12.1",
+    "pug": "^3.0.4"
   }
 }

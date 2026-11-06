@@ -1,0 +1,20 @@
+
+extends layout
+
+block content
+  h1= title
+
+  -
+    let image_names = [
+      "niagara.jpg",
+      "angel.jpg",
+      "victoria.jpg",
+      "iguazu.jpg",
+      "yosemite.jpg"
+    ]
+
+  - for (let i = 0; i < 3; i++) {
+    - let randomIndex = Math.floor(Math.random() * 5)
+    - let imageName = image_names[randomIndex]
+    img(src=`/images/${imageName}`, alt=`Waterfall ${imageName}`, height="300", width="300")
+  - }
