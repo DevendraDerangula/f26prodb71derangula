@@ -7,7 +7,7 @@ Express.js, Pug, MongoDB, and Mongoose.
 
 ## Live Server
 
-Render URL:
+Render URL: https://f26prodb71derangula.onrender.com/
 
 ## Run Locally
 
