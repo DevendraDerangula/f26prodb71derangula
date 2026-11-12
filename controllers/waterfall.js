@@ -2,8 +2,16 @@
 const Waterfall = require('../models/waterfall');
 
 // GET all waterfalls
-exports.waterfall_list = function(req, res) {
-  res.send('Waterfall list endpoint');
+exports.waterfall_list = async function(req, res) {
+  try {
+    const results = await Waterfall.find();
+    res.json(results);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({
+      error: 'Failed to retrieve waterfalls'
+    });
+  }
 };
 
 // GET one waterfall
