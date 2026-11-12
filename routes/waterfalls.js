@@ -1,11 +1,9 @@
 
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-router.get('/', function(req, res, next) {
-  res.render('waterfalls', {
-    title: 'Search Results Waterfalls'
-  });
-});
+const waterfallController = require('../controllers/waterfall');
+
+router.get('/', waterfallController.waterfall_view_all_Page);
 
 module.exports = router;
